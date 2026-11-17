@@ -1,3 +1,4 @@
+
 # Project Deep Learning - SDGs 12 Konsumsi dan Produksi yang Bertanggung Jawab
 
 ## ♻️ Implementasi Transfer Learning Berbasis CNN untuk Klasifikasi Jenis Sampah di Lingkungan Kampus
@@ -32,38 +33,35 @@ Melalui penerapan teknologi Deep Learning, proyek ini mendukung proses identifik
 
 ## 📌 Deskripsi Proyek
 
-Proyek ini merupakan implementasi Deep Learning untuk mengembangkan sistem klasifikasi otomatis jenis sampah berdasarkan citra gambar (*image classification*).
+Proyek ini merupakan implementasi Deep Learning untuk mengembangkan sistem klasifikasi otomatis jenis sampah berdasarkan citra gambar (*image classification*) ke dalam empat kategori: Food Organics, Metal, Paper, dan Plastic.
 
 Sistem dirancang untuk mengenali dan mengelompokkan berbagai jenis sampah berdasarkan karakteristik visualnya, seperti bentuk, warna, tekstur, dan pola.
 
-Pengembangan sistem menggunakan pendekatan **Transfer Learning** berbasis **Convolutional Neural Network (CNN)** dengan framework **TensorFlow**. Model *pre-trained* **MobileNetV2** dimanfaatkan dan disesuaikan dengan dataset gambar sampah, kemudian ditingkatkan melalui proses **fine-tuning**. Model akhir diintegrasikan ke dalam aplikasi web sederhana berbasis **Streamlit** sehingga dapat digunakan untuk mengklasifikasikan gambar sampah secara langsung.
+Model yang digunakan adalah Convolutional Neural Network (CNN) murni, yaitu arsitektur CNN yang dirancang dan dilatih dari awal (from scratch) menggunakan TensorFlow/Keras, tanpa transfer learning dan tanpa model pre-trained. Seluruh bobot model dilatih hanya dari dataset RealWaste.
 
 Proyek ini berfokus pada pemanfaatan teknologi Artificial Intelligence (AI) untuk membantu proses identifikasi dan pemilahan sampah, khususnya dalam konteks lingkungan perguruan tinggi.
 
 ## 🎯 Latar Belakang
 
-Sampah merupakan salah satu permasalahan lingkungan yang masih sering dijumpai, termasuk di lingkungan perguruan tinggi. Berbagai aktivitas akademik dan kegiatan sehari-hari menghasilkan beragam jenis sampah, seperti plastik, kertas, kardus, kaca, logam, dan sampah organik.
+Sampah merupakan salah satu permasalahan lingkungan yang masih sering dijumpai, termasuk di lingkungan perguruan tinggi. Proses pemilahan sampah masih menjadi tantangan karena sampah yang tercampur menyulitkan pengelolaan dan daur ulang.
 
-Namun, proses pemilahan sampah masih menjadi tantangan karena kurangnya pengetahuan mengenai pengelompokan sampah berdasarkan jenis materialnya. Sampah yang tercampur dapat menyulitkan proses pengelolaan dan daur ulang.
+Seiring perkembangan Deep Learning, klasifikasi citra dapat dimanfaatkan untuk mengenali jenis sampah secara otomatis berdasarkan karakteristik visualnya. CNN dipilih karena mampu mempelajari fitur visual seperti bentuk, tekstur, dan pola secara otomatis dari gambar.
 
-Seiring perkembangan teknologi Artificial Intelligence, khususnya Deep Learning, klasifikasi citra dapat dimanfaatkan untuk membantu mengenali berbagai jenis sampah secara otomatis berdasarkan karakteristik visualnya.
-
-Melalui proyek ini, diterapkan metode Transfer Learning berbasis CNN menggunakan TensorFlow untuk mengembangkan model yang mampu mengklasifikasikan jenis sampah berdasarkan gambar, sebagai bentuk pemanfaatan teknologi AI dalam mendukung pengelolaan sampah serta meningkatkan kesadaran terhadap pentingnya pemilahan sampah di lingkungan kampus.
+Proyek ini menerapkan CNN yang dibangun dari awal untuk mengklasifikasikan empat kategori sampah sebagai bentuk pemanfaatan teknologi AI dalam mendukung pengelolaan sampah sesuai SDG 12.
 
 ## 🎯 Tujuan Proyek
 
-1. Mengimplementasikan metode Transfer Learning berbasis CNN untuk klasifikasi jenis sampah.
-2. Mengembangkan model Deep Learning menggunakan TensorFlow.
-3. Mengidentifikasi berbagai kategori sampah berdasarkan citra gambar.
-4. Mengevaluasi performa model berdasarkan hasil pengujian.
-5. Menerapkan teknologi Artificial Intelligence sebagai pendukung proses identifikasi dan pemilahan sampah melalui aplikasi web.
+1. Membangun model CNN dari awal (tanpa transfer learning) untuk klasifikasi jenis sampah.
+2. Mengidentifikasi empat kategori sampah (Food Organics, Metal, Paper, Plastic) berdasarkan citra.
+3. Mengevaluasi performa model menggunakan accuracy, precision, recall, F1-score, dan confusion matrix.
+4. Menganalisis pengaruh teknik augmentasi data, class weight, dan regularisasi terhadap performa model.
 
 ## ❓ Rumusan Masalah
 
-1. Bagaimana menerapkan metode Transfer Learning berbasis CNN menggunakan TensorFlow untuk mengklasifikasikan jenis sampah berdasarkan gambar?
-2. Bagaimana model Deep Learning dapat mengenali dan membedakan berbagai jenis sampah berdasarkan karakteristik visualnya?
-3. Bagaimana performa model Transfer Learning dalam mengklasifikasikan berbagai kategori sampah?
-4. Bagaimana hasil klasifikasi otomatis dapat dimanfaatkan untuk membantu proses pemilahan sampah di lingkungan kampus?
+1. Bagaimana membangun model CNN dari awal untuk mengklasifikasikan empat jenis sampah berdasarkan gambar?
+2. Bagaimana performa model CNN pada data uji dan pada gambar di luar dataset?
+3. Kategori sampah mana yang paling sulit dibedakan oleh model, dan apa penyebabnya?
+4. Bagaimana pengaruh augmentasi data, class weight, dan Batch Normalization terhadap kestabilan pelatihan?
 
 ---
 
