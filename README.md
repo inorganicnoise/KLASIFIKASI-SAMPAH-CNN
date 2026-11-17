@@ -277,3 +277,30 @@ streamlit run app.py
 ## 📚 Kesimpulan
 
 Penerapan Transfer Learning berbasis MobileNetV2 dengan TensorFlow berhasil mengklasifikasikan sembilan kategori sampah pada dataset RealWaste dengan akurasi **85,95%** setelah fine-tuning. Model dapat membedakan jenis sampah berdasarkan karakteristik visualnya, dengan kesalahan klasifikasi yang paling banyak terjadi pada kategori Miscellaneous Trash. Hasil klasifikasi dapat dimanfaatkan melalui aplikasi web untuk membantu proses pemilahan sampah di lingkungan kampus, sebagai dukungan terhadap SDG 12.
+
+
+## Referensi
+
+- Kaggle, [RealWaste Dataset](https://www.kaggle.com/datasets/joebeachcapital/realwaste).
+
+- IEEE DataPort, [RealWaste (dataset resmi, lisensi CC BY-NC-SA 4.0)](https://ieee-dataport.org/documents/realwaste).
+
+- United Nations, [SDG 12: Responsible Consumption and Production](https://sdgs.un.org/goals/goal12).
+
+- Single, S., Iranmanesh, S., & Raad, R. (2023). RealWaste: A novel real-life data set for landfill waste classification using deep learning (sumber dataset). *Information*, 14(12), 633. [https://doi.org/10.3390/info14120633](https://doi.org/10.3390/info14120633)
+
+- Wandi, F. A., Kesuma, M. A., Nugraha, C. A., Cahyani, O. I., Umar, I., Septiarini, A., Widians, J. A., & Irsyad, A. (2026). Komparasi ResNet50, MobileNetV2 dan Custom CNN dalam klasifikasi sampah organik dan anorganik. *JATI (Jurnal Mahasiswa Teknik Informatika)*, 10(4), 6475–6481. [https://ejournal.itn.ac.id/jati/article/download/18566/9866/](https://ejournal.itn.ac.id/jati/article/download/18566/9866/)
+
+- Bahagia, G. A., & Akbar, M. (2024). Klasifikasi sampah organik dan anorganik menggunakan metode Convolutional Neural Network (CNN). *JATI (Jurnal Mahasiswa Teknik Informatika)*, 8(5), 10349–10355. [https://ejournal.itn.ac.id/jati/article/download/11038/6267/](https://ejournal.itn.ac.id/jati/article/download/11038/6267/)
+
+- Husnawati, H., Malyan, A. B. J., Putra, R. R., & Agustri, S. (2024). Smart trash box technology of computer vision to support Ecogreen campus. In N. L. Husni et al. (Eds.), *Proceedings of the 7th FIRST 2023 International Conference on Global Innovations (FIRST-ESCSI 2023)* (Advances in Engineering Research, Vol. 232, pp. 220–229). Atlantis Press. [https://doi.org/10.2991/978-94-6463-386-3_25](https://doi.org/10.2991/978-94-6463-386-3_25)
+
+- Budi, B. S., & Fatma, Y. (2026). Metode systematic literature review arsitektur Convolutional Neural Network untuk klasifikasi sampah berbasis citra. *Jurnal Teknik Informatika dan Teknologi Informasi*, 6(2), 297–319. [https://doi.org/10.55606/jutiti.v6i2.7329](https://doi.org/10.55606/jutiti.v6i2.7329)
+
+- Shorten, C., & Khoshgoftaar, T. M. (2019). A survey on image data augmentation for deep learning. *Journal of Big Data*, 6, 60. [https://doi.org/10.1186/s40537-019-0197-0](https://doi.org/10.1186/s40537-019-0197-0)
+
+- Ioffe, S., & Szegedy, C. (2015). Batch normalization: Accelerating deep network training by reducing internal covariate shift. *Proceedings of the 32nd International Conference on Machine Learning (ICML)*. [https://arxiv.org/abs/1502.03167](https://arxiv.org/abs/1502.03167)
+
+- Srivastava, N., Hinton, G., Krizhevsky, A., Sutskever, I., & Salakhutdinov, R. (2014). Dropout: A simple way to prevent neural networks from overfitting. *Journal of Machine Learning Research*, 15(56), 1929–1958. [https://jmlr.org/papers/v15/srivastava14a.html](https://jmlr.org/papers/v15/srivastava14a.html)
+
+- Kingma, D. P., & Ba, J. (2015). Adam: A method for stochastic optimization. *3rd International Conference on Learning Representations (ICLR)*. [https://arxiv.org/abs/1412.6980](https://arxiv.org/abs/1412.6980)
