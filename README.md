@@ -105,13 +105,7 @@ Dataset dibagi dengan library split-folders (seed=42) dengan rasio 70% : 15% : 1
 | Validation Set | 15% | 710 |
 | Testing Set | 15% | 719 |
 
-## | Kategori	| Training |	Validation	| Testing | ##
-|---|---|---:|
-| Food Organics |	287	| 61	| 63 |
-| Metal |	553 |	118 |	119 |
-| Paper	|350	| 75	| 75 |
-| Plastic |	644 |	138 |	139 |
-## | Total	| 1.834	| 392	| 396 | ##
+
 
 Jumlah gambar tidak seimbang antar kategori, sehingga digunakan class weight saat pelatihan.
 
