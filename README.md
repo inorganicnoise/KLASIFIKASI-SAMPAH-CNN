@@ -71,7 +71,7 @@ Dataset yang digunakan dalam proyek ini adalah **RealWaste Dataset** yang dipero
 
 🔗 **Sumber Dataset:** [RealWaste - Kaggle](https://www.kaggle.com/datasets/joebeachcapital/realwaste)
 
-RealWaste merupakan dataset citra sampah yang berisi gambar berbagai jenis material sampah. Dataset ini digunakan untuk melatih dan menguji kemampuan model dalam mengenali serta mengklasifikasikan jenis sampah berdasarkan karakteristik visualnya.
+RealWaste merupakan dataset citra sampah yang berisi gambar berbagai jenis material sampah. Dataset ini digunakan untuk melatih dan menguji kemampuan model dalam mengenali serta mengklasifikasikan jenis sampah berdasarkan karakteristik visualnya. RealWaste berisi 4.752 gambar dalam 9 kategori. Dari kategori tersebut, proyek ini hanya memakai 4 kategori:
 
 ### 📊 Informasi Dataset
 
@@ -89,26 +89,31 @@ RealWaste merupakan dataset citra sampah yang berisi gambar berbagai jenis mater
 
 | No. | Kategori | Jumlah Gambar |
 |---|---|---:|
-| 1 | Cardboard | 461 |
-| 2 | Food Organics | 411 |
-| 3 | Glass | 420 |
-| 4 | Metal | 790 |
-| 5 | Miscellaneous Trash | 495 |
-| 6 | Paper | 500 |
-| 7 | Plastic | 921 |
-| 8 | Textile Trash | 318 |
-| 9 | Vegetation | 436 |
-| | **Total** | **4.752** |
+| 1 | Food Organics | 411 |
+| 2 | Metal | 790 |
+| 3 | Paper | 500 |
+| 4 | Plastic | 921 |
+| | **Total** | **2.622** |
 
 ### ✂️ Pembagian Dataset
 
-Dataset dibagi menggunakan library `split-folders` dengan `seed=42` agar hasil pembagian dapat direproduksi.
+Dataset dibagi dengan library split-folders (seed=42) dengan rasio 70% : 15% : 15%.
 
 | Bagian | Proporsi | Jumlah Gambar |
 |---|---|---:|
 | Training Set | 70% | 3.323 |
 | Validation Set | 15% | 710 |
 | Testing Set | 15% | 719 |
+
+## | Kategori	| Training |	Validation	| Testing | ##
+|---|---|---:|
+| Food Organics |	287	| 61	| 63 |
+| Metal |	553 |	118 |	119 |
+| Paper	|350	| 75	| 75 |
+| Plastic |	644 |	138 |	139 |
+## | Total	| 1.834	| 392	| 396 | ##
+
+Jumlah gambar tidak seimbang antar kategori, sehingga digunakan class weight saat pelatihan.
 
 ---
 
