@@ -5,7 +5,6 @@
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-CNN-blue?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 
@@ -113,30 +112,9 @@ Jumlah gambar tidak seimbang antar kategori, sehingga digunakan class weight saa
 
 ## 🧠 Metode dan Teknologi
 
-### 1. Transfer Learning
-
-Transfer Learning merupakan pendekatan pembelajaran mesin yang memanfaatkan pengetahuan dari model yang telah dilatih sebelumnya (*pre-trained model*) untuk menyelesaikan tugas baru. Pendekatan ini digunakan agar model klasifikasi sampah dapat memanfaatkan fitur visual yang telah dipelajari dari dataset sebelumnya.
-
-### 2. Convolutional Neural Network (CNN)
+### 1. Convolutional Neural Network (CNN)
 
 CNN merupakan arsitektur Deep Learning yang banyak digunakan dalam pengolahan citra. CNN mampu mempelajari karakteristik visual gambar melalui proses ekstraksi fitur, seperti bentuk, tekstur, dan pola.
-
-### 3. MobileNetV2
-
-Model yang digunakan adalah **MobileNetV2** dengan bobot *pre-trained* dari **ImageNet**. MobileNetV2 dirancang agar lebih ringan dan efisien dalam pemrosesan citra.
-
-Arsitektur model yang dibangun:
-
-| Lapisan | Fungsi |
-|---|---|
-| MobileNetV2 (tanpa lapisan klasifikasi bawaan) | Ekstraksi fitur visual |
-| GlobalAveragePooling2D | Meringkas *feature map* menjadi satu vektor fitur |
-| Dropout (0,2) | Mengurangi risiko *overfitting* |
-| Dense (9, softmax) | Menghasilkan probabilitas untuk 9 kategori sampah |
-
-### 4. Fine-Tuning
-
-Setelah pelatihan awal (MobileNetV2 dibekukan), 30 lapisan terakhir MobileNetV2 dibuka (kecuali lapisan *BatchNormalization*) dan dilatih ulang selama 15 epoch dengan *learning rate* 0,00001 agar bobot model lebih sesuai dengan dataset RealWaste.
 
 ### 🛠️ Teknologi yang Digunakan
 
@@ -144,15 +122,12 @@ Setelah pelatihan awal (MobileNetV2 dibekukan), 30 lapisan terakhir MobileNetV2 
 |---|---|
 | Bahasa Pemrograman | Python |
 | Framework Deep Learning | TensorFlow / Keras |
-| Metode | Transfer Learning dan Fine-Tuning |
-| Arsitektur CNN | MobileNetV2 |
 | Pengembangan Model | Google Colab |
 | Pengunduhan Dataset | KaggleHub |
 | Pembagian Dataset | split-folders |
 | Pengolahan Data | NumPy, Pillow |
 | Visualisasi | Matplotlib |
 | Evaluasi Model | Scikit-learn |
-| Aplikasi Web | Streamlit |
 | Version Control | Git & GitHub |
 
 ---
