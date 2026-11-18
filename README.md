@@ -1,8 +1,7 @@
 
 # Project Deep Learning - SDGs 12 Konsumsi dan Produksi yang Bertanggung Jawab
 
-## ♻️ Implementasi Transfer Learning Berbasis CNN untuk Klasifikasi Jenis Sampah di Lingkungan Kampus
-
+## ♻️ Klasifikasi Jenis Sampah Menggunakan Convolutional Neural Network (CNN)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-CNN-blue?style=for-the-badge)
