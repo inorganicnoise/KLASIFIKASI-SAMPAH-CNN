@@ -1,5 +1,7 @@
-# ♻️ Klasifikasi Jenis Sampah Menggunakan Convolutional Neural Network (CNN)
 
+# Project Deep Learning - SDGs 12 Konsumsi dan Produksi yang Bertanggung Jawab
+
+## ♻️ Klasifikasi Jenis Sampah Menggunakan Convolutional Neural Network (CNN)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-CNN-blue?style=for-the-badge)
@@ -7,7 +9,9 @@
 
 Proyek ini merupakan implementasi **Deep Learning untuk klasifikasi jenis sampah** sebagai bentuk dukungan terhadap **SDG 12: Responsible Consumption and Production (Konsumsi dan Produksi yang Bertanggung Jawab)**.
 
-Melalui pemanfaatan teknologi Artificial Intelligence (AI), proyek ini bertujuan membantu proses identifikasi jenis sampah berdasarkan gambar sehingga dapat mendukung kesadaran dan kegiatan pemilahan sampah.
+SDG 12 menekankan pentingnya pola konsumsi dan produksi yang bertanggung jawab, termasuk pengurangan limbah serta peningkatan pengelolaan sampah.
+
+Melalui penerapan teknologi Deep Learning, proyek ini mendukung proses identifikasi jenis sampah sebagai salah satu upaya untuk meningkatkan kesadaran dan efektivitas pemilahan sampah.
 
 ---
 
@@ -27,42 +31,35 @@ Melalui pemanfaatan teknologi Artificial Intelligence (AI), proyek ini bertujuan
 
 ## 📌 Deskripsi Proyek
 
-Proyek ini mengembangkan model klasifikasi gambar sampah menggunakan metode **Convolutional Neural Network (CNN)**. Model dirancang untuk mengenali karakteristik visual gambar, seperti bentuk, warna, tekstur, dan pola, kemudian mengelompokkannya ke dalam empat kategori sampah.
+Proyek ini merupakan implementasi Deep Learning untuk mengembangkan sistem klasifikasi otomatis jenis sampah berdasarkan citra gambar (*image classification*) ke dalam empat kategori: Food Organics, Metal, Paper, dan Plastic.
 
 Model CNN dibangun dan dilatih dari awal (*from scratch*) menggunakan TensorFlow/Keras, tanpa menggunakan Transfer Learning maupun model pre-trained. Dengan pendekatan ini, model mempelajari fitur gambar secara langsung dari dataset yang digunakan.
 
-Empat kategori sampah yang diklasifikasikan adalah:
+Model yang digunakan adalah Convolutional Neural Network (CNN) murni, yaitu arsitektur CNN yang dirancang dan dilatih dari awal (from scratch) menggunakan TensorFlow/Keras, tanpa transfer learning dan tanpa model pre-trained. Seluruh bobot model dilatih hanya dari dataset RealWaste.
 
-1. Food Organics
-2. Metal
-3. Paper
-4. Plastic
-
-Proyek ini menggunakan dataset RealWaste dan dikembangkan melalui Google Colab. Model yang telah dilatih juga digunakan untuk melakukan prediksi terhadap gambar sampah baru.
+Proyek ini berfokus pada pemanfaatan teknologi Artificial Intelligence (AI) untuk membantu proses identifikasi dan pemilahan sampah, khususnya dalam konteks lingkungan perguruan tinggi.
 
 ## 🎯 Latar Belakang
 
-Sampah merupakan salah satu permasalahan lingkungan yang membutuhkan perhatian, termasuk di lingkungan perguruan tinggi. Salah satu tantangan dalam pengelolaan sampah adalah proses pemilahan berdasarkan jenis materialnya.
+Sampah merupakan salah satu permasalahan lingkungan yang masih sering dijumpai, termasuk di lingkungan perguruan tinggi. Proses pemilahan sampah masih menjadi tantangan karena sampah yang tercampur menyulitkan pengelolaan dan daur ulang.
 
-Perkembangan teknologi Artificial Intelligence, khususnya Deep Learning, memungkinkan komputer mengenali objek melalui gambar. Salah satu metode yang dapat digunakan adalah Convolutional Neural Network (CNN), yang mampu mempelajari fitur visual secara otomatis.
+Seiring perkembangan Deep Learning, klasifikasi citra dapat dimanfaatkan untuk mengenali jenis sampah secara otomatis berdasarkan karakteristik visualnya. CNN dipilih karena mampu mempelajari fitur visual seperti bentuk, tekstur, dan pola secara otomatis dari gambar.
 
-Berdasarkan hal tersebut, proyek ini menerapkan CNN untuk mengklasifikasikan empat jenis sampah berdasarkan citra gambar. Pengembangan ini diharapkan dapat menjadi salah satu bentuk pemanfaatan teknologi dalam mendukung pengelolaan sampah dan tujuan SDG 12.
+Proyek ini menerapkan CNN yang dibangun dari awal untuk mengklasifikasikan empat kategori sampah sebagai bentuk pemanfaatan teknologi AI dalam mendukung pengelolaan sampah sesuai SDG 12.
 
 ## 🎯 Tujuan Proyek
 
-1. Membangun model CNN menggunakan TensorFlow/Keras untuk klasifikasi gambar sampah.
-2. Mengidentifikasi empat kategori sampah berdasarkan karakteristik visual gambar.
-3. Menerapkan teknik preprocessing dan data augmentation pada dataset.
-4. Menggunakan class weight untuk membantu menangani ketidakseimbangan jumlah gambar antar kelas.
-5. Mengevaluasi performa model menggunakan accuracy, precision, recall, F1-score, dan confusion matrix.
-6. Menguji kemampuan model dalam memprediksi gambar sampah baru.
+1. Membangun model CNN dari awal (tanpa transfer learning) untuk klasifikasi jenis sampah.
+2. Mengidentifikasi empat kategori sampah (Food Organics, Metal, Paper, Plastic) berdasarkan citra.
+3. Mengevaluasi performa model menggunakan accuracy, precision, recall, F1-score, dan confusion matrix.
+4. Menganalisis pengaruh teknik augmentasi data, class weight, dan regularisasi terhadap performa model.
 
 ## ❓ Rumusan Masalah
 
-1. Bagaimana membangun model CNN untuk mengklasifikasikan jenis sampah berdasarkan citra gambar?
-2. Bagaimana penerapan preprocessing dan data augmentation dalam proses pelatihan model?
-3. Bagaimana performa model dalam mengklasifikasikan empat kategori sampah pada data testing?
-4. Bagaimana kemampuan model dalam mengenali gambar sampah baru di luar data pelatihan?
+1. Bagaimana membangun model CNN dari awal untuk mengklasifikasikan empat jenis sampah berdasarkan gambar?
+2. Bagaimana performa model CNN pada data uji dan pada gambar di luar dataset?
+3. Kategori sampah mana yang paling sulit dibedakan oleh model, dan apa penyebabnya?
+4. Bagaimana pengaruh augmentasi data, class weight, dan Batch Normalization terhadap kestabilan pelatihan?
 
 ---
 
@@ -72,7 +69,7 @@ Dataset yang digunakan adalah **RealWaste Dataset** yang diperoleh melalui Kaggl
 
 🔗 **Sumber Dataset:** [RealWaste - Kaggle](https://www.kaggle.com/datasets/joebeachcapital/realwaste)
 
-RealWaste merupakan dataset citra sampah yang berisi berbagai jenis material sampah. Dalam proyek ini, dataset difokuskan pada empat kategori, yaitu Food Organics, Metal, Paper, dan Plastic.
+RealWaste merupakan dataset citra sampah yang berisi gambar berbagai jenis material sampah. Dataset ini digunakan untuk melatih dan menguji kemampuan model dalam mengenali serta mengklasifikasikan jenis sampah berdasarkan karakteristik visualnya. RealWaste berisi 4.752 gambar dalam 9 kategori. Dari kategori tersebut, proyek ini hanya memakai 4 kategori:
 
 ### 📊 Informasi Dataset
 
@@ -98,16 +95,17 @@ RealWaste merupakan dataset citra sampah yang berisi berbagai jenis material sam
 
 ### ✂️ Pembagian Dataset
 
-Dataset dibagi menggunakan library `split-folders` dengan rasio 70% untuk training, 15% untuk validation, dan 15% untuk testing. Pembagian menggunakan `seed=42` agar hasilnya dapat direproduksi.
+Dataset dibagi dengan library split-folders (seed=42) dengan rasio 70% : 15% : 15%.
 
 | Bagian | Proporsi | Jumlah Gambar |
-|---|---:|---:|
-| Training Set | 70% | 1.834 |
-| Validation Set | 15% | 392 |
-| Testing Set | 15% | 396 |
-| **Total** | **100%** | **2.622** |
+|---|---|---:|
+| Training Set | 70% | 3.323 |
+| Validation Set | 15% | 710 |
+| Testing Set | 15% | 719 |
 
-Distribusi jumlah gambar antar kategori tidak seimbang. Oleh karena itu, digunakan teknik class weight dalam proses pelatihan untuk membantu mengurangi pengaruh ketidakseimbangan tersebut.
+
+
+Jumlah gambar tidak seimbang antar kategori, sehingga digunakan class weight saat pelatihan.
 
 ---
 
@@ -115,11 +113,9 @@ Distribusi jumlah gambar antar kategori tidak seimbang. Oleh karena itu, digunak
 
 ### 1. Convolutional Neural Network (CNN)
 
-CNN merupakan salah satu arsitektur Deep Learning yang banyak digunakan untuk pengolahan citra. CNN dapat mempelajari fitur visual gambar melalui lapisan konvolusi dan pooling.
+CNN merupakan arsitektur Deep Learning yang banyak digunakan dalam pengolahan citra. CNN mampu mempelajari karakteristik visual gambar melalui proses ekstraksi fitur, seperti bentuk, tekstur, dan pola.
 
-Dalam proyek ini, CNN dibangun dari awal (*from scratch*) menggunakan beberapa lapisan Conv2D, MaxPooling2D, Flatten, dan Dense.
-
-### 2. Teknologi yang Digunakan
+### 🛠️ Teknologi yang Digunakan
 
 | Komponen | Teknologi |
 |---|---|
@@ -138,184 +134,146 @@ Dalam proyek ini, CNN dibangun dari awal (*from scratch*) menggunakan beberapa l
 ## ⚙️ Tahapan Pengembangan
 
 ### 1. Pengumpulan Dataset
-
-Dataset RealWaste diunduh dari Kaggle menggunakan library `kagglehub`. Dari sembilan kategori yang tersedia, proyek ini memilih empat kategori, yaitu Food Organics, Metal, Paper, dan Plastic.
+Mengunduh dataset RealWaste dari Kaggle menggunakan `kagglehub`.
 
 ### 2. Exploratory Data Analysis (EDA)
-
-Tahap EDA dilakukan untuk mengetahui struktur dataset, jumlah gambar pada setiap kategori, serta melihat contoh gambar dari masing-masing kelas.
+Mengeksplorasi struktur dataset, jumlah gambar setiap kategori, serta menampilkan contoh gambar dari setiap kelas. Dari tahap ini terlihat bahwa distribusi kelas tidak seimbang (Plastic 921 gambar vs Textile Trash 318 gambar).
 
 ### 3. Pembagian Dataset
-
-Dataset dibagi menjadi tiga bagian, yaitu training, validation, dan testing dengan rasio 70:15:15 menggunakan library `split-folders`.
+Membagi dataset menjadi training (70%), validation (15%), dan testing (15%).
 
 ### 4. Preprocessing Data
+- Memuat gambar dari folder dengan ukuran 224 × 224 piksel dan *batch size* 32.
+- Normalisasi nilai piksel menggunakan `preprocess_input` MobileNetV2 ke rentang [-1, 1].
+- Pemeriksaan hasil normalisasi.
 
-Tahap preprocessing dilakukan dengan:
+### 5. Implementasi Transfer Learning
+Menggunakan MobileNetV2 *pre-trained* (ImageNet) yang dibekukan, kemudian menambahkan lapisan klasifikasi untuk sembilan kategori sampah.
 
-- Memuat gambar dari folder berdasarkan kategori.
-- Mengubah ukuran gambar menjadi 224 × 224 piksel.
-- Menggunakan batch size sebesar 32.
-- Mengubah gambar menjadi format yang dapat diproses oleh model.
-- Melakukan normalisasi nilai piksel menggunakan `Rescaling(1./255)` ke rentang 0–1.
+### 6. Training Model
+Melatih lapisan klasifikasi selama 10 epoch menggunakan optimizer Adam dan loss *sparse categorical crossentropy*.
 
-### 5. Data Augmentation
+### 7. Evaluasi Awal
+Mengukur performa model pada data testing menggunakan accuracy, classification report, dan confusion matrix.
 
-Data augmentation digunakan untuk memberikan variasi pada gambar training melalui beberapa teknik:
+### 8. Fine-Tuning
+Membuka 30 lapisan terakhir MobileNetV2 dan melatih ulang model selama 15 epoch dengan *learning rate* 0,00001.
 
-- Random Horizontal Flip.
-- Random Rotation.
-- Random Zoom.
+### 9. Evaluasi Setelah Fine-Tuning
+Mengevaluasi kembali model pada data testing dan membandingkannya dengan hasil sebelum fine-tuning.
 
-Teknik ini bertujuan membantu model mempelajari variasi tampilan gambar dan mengurangi kecenderungan menghafal data training.
+### 10. Penyimpanan Model
+Menyimpan model dalam format `.keras` (`waste_classifier.keras`) dan nama kelas dalam `class_names.json`.
 
-### 6. Penerapan Class Weight
+### 11. Pengujian Gambar Baru
+Menguji model menggunakan gambar sampah baru yang belum pernah digunakan pada proses training, lengkap dengan kategori prediksi dan probabilitas untuk setiap kelas.
 
-Class weight dihitung berdasarkan jumlah gambar pada setiap kategori di data training. Bobot tersebut digunakan selama pelatihan untuk membantu model memperhatikan kelas yang memiliki jumlah gambar lebih sedikit.
-
-### 7. Pembuatan Arsitektur CNN
-
-Model CNN dibangun menggunakan TensorFlow/Keras dengan susunan lapisan sebagai berikut:
-
-1. Input Layer dengan ukuran gambar 224 × 224 × 3.
-2. Data Augmentation.
-3. Rescaling.
-4. Conv2D dan MaxPooling2D sebanyak empat blok.
-5. Flatten.
-6. Dense dengan 64 neuron dan aktivasi ReLU.
-7. Dropout sebesar 0,5.
-8. Output Layer dengan 4 neuron dan aktivasi Softmax.
-
-### 8. Kompilasi Model
-
-Model dikompilasi menggunakan:
-
-- Optimizer: Adam.
-- Learning Rate: 0,0005.
-- Loss Function: Sparse Categorical Crossentropy.
-- Evaluation Metric: Accuracy.
-
-### 9. Training Model
-
-Model dilatih menggunakan data training dan validation dengan maksimal 40 epoch. Proses pelatihan menggunakan class weight serta callback Early Stopping dan ReduceLROnPlateau untuk membantu mengontrol proses pembelajaran.
-
-### 10. Evaluasi Model
-
-Evaluasi dilakukan menggunakan data testing untuk mengetahui kemampuan model dalam mengklasifikasikan empat kategori sampah.
-
-Metrik evaluasi yang digunakan meliputi:
-
-- Accuracy.
-- Precision.
-- Recall.
-- F1-Score.
-- Confusion Matrix.
-
-Selain itu, ditampilkan grafik training accuracy, validation accuracy, training loss, dan validation loss.
-
-### 11. Penyimpanan Model
-
-Model CNN yang telah dilatih disimpan dalam format `.keras` dengan nama `waste_classifier_cnn.keras`. Nama kelas disimpan dalam file `class_names.json` agar dapat digunakan kembali ketika melakukan prediksi.
-
-### 12. Pengujian Gambar Baru
-
-Pengujian dilakukan dengan mengunggah gambar sampah baru melalui Google Colab. Gambar diproses terlebih dahulu, kemudian dimasukkan ke model untuk menghasilkan kategori prediksi, confidence score, dan probabilitas setiap kelas.
+### 12. Pembuatan Aplikasi Web
+Membangun aplikasi klasifikasi sampah berbasis Streamlit (`app.py`) yang memuat model, menerima gambar unggahan, lalu menampilkan kategori prediksi, *confidence score*, dan probabilitas setiap kategori.
 
 ---
 
 ## 📊 Hasil Evaluasi Model
 
-Model dievaluasi menggunakan 396 gambar pada data testing.
+Model dievaluasi pada 719 gambar data testing menggunakan accuracy, precision, recall, F1-score, dan confusion matrix.
 
-### Hasil Akhir Evaluasi
+### Perbandingan Sebelum dan Sesudah Fine-Tuning
 
-| Metrik | Nilai |
+| Tahap | Test Accuracy | Test Loss | Macro F1-Score |
+|---|---:|---:|---:|
+| Transfer Learning (MobileNetV2 dibekukan) | 81,92% | 0,5330 | 0,83 |
+| Setelah Fine-Tuning | **85,95%** | **0,4567** | **0,87** |
+
+### Hasil Akhir (Setelah Fine-Tuning)
+
+| Metrik | Nilai (Weighted Average) |
 |---|---:|
-| Test Accuracy | **63,64%** |
-| Test Loss | 0,8756 |
-| Weighted Precision | 0,64 |
-| Weighted Recall | 0,64 |
-| Weighted F1-Score | 0,63 |
-| Macro F1-Score | 0,65 |
+| Accuracy | 85,95% |
+| Precision | 86,14% |
+| Recall | 85,95% |
+| F1-Score | 85,94% |
 
-### Classification Report
+### F1-Score per Kategori
 
-| Kategori | Precision | Recall | F1-Score | Support |
-|---|---:|---:|---:|---:|
-| Food Organics | 0,70 | 1,00 | 0,82 | 63 |
-| Metal | 0,57 | 0,55 | 0,56 | 119 |
-| Paper | 0,60 | 0,72 | 0,65 | 75 |
-| Plastic | 0,68 | 0,50 | 0,57 | 139 |
-| **Weighted Average** | **0,64** | **0,64** | **0,63** | **396** |
+| Kategori | Sebelum | Sesudah |
+|---|---:|---:|
+| Cardboard | 0,85 | 0,86 |
+| Food Organics | 0,88 | 0,90 |
+| Glass | 0,82 | 0,88 |
+| Metal | 0,81 | 0,84 |
+| Miscellaneous Trash | 0,66 | 0,73 |
+| Paper | 0,83 | 0,86 |
+| Plastic | 0,76 | 0,84 |
+| Textile Trash | 0,89 | 0,91 |
+| Vegetation | 0,95 | 0,98 |
 
-### Pembahasan Hasil
+### Pembahasan
 
-Berdasarkan hasil pengujian, model memperoleh accuracy sebesar 63,64% pada 396 gambar testing.
-
-Kategori Food Organics memperoleh nilai recall sebesar 1,00 dan F1-score sebesar 0,82. Hal ini menunjukkan bahwa seluruh gambar Food Organics pada data testing berhasil dikenali oleh model.
-
-Sementara itu, kategori Metal memperoleh F1-score sebesar 0,56 dan Plastic sebesar 0,57. Kedua kategori tersebut masih memiliki tantangan dalam proses klasifikasi, yang dapat dipengaruhi oleh kemiripan karakteristik visual dan variasi tampilan gambar.
-
-Hasil evaluasi menunjukkan bahwa model sudah dapat melakukan klasifikasi terhadap empat kategori sampah, tetapi performanya masih dapat ditingkatkan melalui pengembangan arsitektur, penambahan data, dan penyempurnaan proses pelatihan.
+- Fine-tuning meningkatkan akurasi pengujian dari 81,92% menjadi 85,95% dan menurunkan test loss, dengan peningkatan F1-score pada seluruh kategori.
+- Kategori dengan performa terbaik adalah **Vegetation** (F1 0,98) dan **Textile Trash** (F1 0,91), yang memiliki ciri visual lebih khas.
+- Kategori dengan performa terendah adalah **Miscellaneous Trash** (F1 0,73), karena kelas ini mencakup beragam jenis sampah dengan tampilan visual yang bervariasi.
+- Pada tahap fine-tuning, akurasi training mencapai sekitar 99%, sedangkan akurasi validasi sekitar 85%. Selisih ini menunjukkan adanya indikasi *overfitting*, sehingga model masih dapat ditingkatkan.
 
 ---
 
-## 💾 Penyimpanan Model
+## 🌐 Aplikasi Web
 
-Model dan nama kelas disimpan agar dapat digunakan kembali tanpa harus melakukan pelatihan dari awal.
+Model akhir diimplementasikan dalam aplikasi web berbasis Streamlit. Pengguna dapat mengunggah gambar sampah (`jpg`, `jpeg`, atau `png`), kemudian aplikasi menampilkan kategori hasil klasifikasi, *confidence score*, dan grafik probabilitas untuk sembilan kategori.
 
-| Nama File | Keterangan |
-|---|---|
-| `waste_classifier_cnn.keras` | Model CNN hasil pelatihan |
-| `model_final.keras` | Salinan model yang diunduh dari Google Colab |
-| `class_names.json` | Daftar nama kategori sampah |
+### Menjalankan Aplikasi
 
-Model disimpan menggunakan format Keras sehingga dapat dimuat kembali menggunakan TensorFlow/Keras.
-
-Contoh kode untuk memuat model:
-
-```python
-import tensorflow as tf
-import json
-
-model = tf.keras.models.load_model("waste_classifier_cnn.keras")
-
-with open("class_names.json", "r") as f:
-    class_names = json.load(f)
+```bash
+pip install -r requirements.txt
+streamlit run app.py
 ```
+
+### Struktur File Aplikasi
+
+| File | Keterangan |
+|---|---|
+| `app.py` | Kode aplikasi Streamlit |
+| `requirements.txt` | Daftar library yang dibutuhkan |
+| `waste_classifier.keras` | Model hasil fine-tuning |
+| `class_names.json` | Daftar nama kategori sampah |
 
 ---
 
 ## 🚀 Saran Pengembangan
 
-Beberapa hal yang dapat dikembangkan lebih lanjut dari proyek ini adalah:
-
-- Menambah jumlah gambar pada setiap kategori agar model memperoleh variasi data yang lebih banyak.
-- Meningkatkan performa model melalui penyesuaian arsitektur CNN dan hyperparameter.
-- Menguji model menggunakan lebih banyak gambar sampah yang diambil langsung dari lingkungan kampus.
+- Menambahkan augmentasi gambar untuk mengurangi *overfitting*.
+- Menerapkan *class weight* untuk mengatasi ketidakseimbangan jumlah data antar kategori.
+- Menambah data sampah yang diambil langsung dari lingkungan kampus agar model lebih sesuai dengan kondisi nyata.
 - Mencoba arsitektur CNN lain sebagai pembanding.
-- Mengembangkan aplikasi berbasis web atau mobile agar model lebih mudah digunakan oleh masyarakat.
 
 ---
 
 ## 📚 Kesimpulan
 
-Proyek ini berhasil mengimplementasikan Convolutional Neural Network menggunakan TensorFlow/Keras untuk mengklasifikasikan empat kategori sampah, yaitu Food Organics, Metal, Paper, dan Plastic, berdasarkan dataset RealWaste.
+Penerapan Transfer Learning berbasis MobileNetV2 dengan TensorFlow berhasil mengklasifikasikan sembilan kategori sampah pada dataset RealWaste dengan akurasi **85,95%** setelah fine-tuning. Model dapat membedakan jenis sampah berdasarkan karakteristik visualnya, dengan kesalahan klasifikasi yang paling banyak terjadi pada kategori Miscellaneous Trash. Hasil klasifikasi dapat dimanfaatkan melalui aplikasi web untuk membantu proses pemilahan sampah di lingkungan kampus, sebagai dukungan terhadap SDG 12.
 
-Model dibangun dan dilatih dari awal dengan menerapkan preprocessing, data augmentation, class weight, Dropout, serta callback untuk membantu proses pelatihan.
 
-Berdasarkan evaluasi pada 396 gambar testing, model memperoleh accuracy sebesar **63,64%** dan weighted F1-score sebesar **0,63**. Hasil tersebut menunjukkan bahwa model sudah mampu mengenali beberapa karakteristik gambar sampah, tetapi masih memerlukan pengembangan untuk meningkatkan ketepatan klasifikasinya.
+## Referensi
 
-Melalui proyek ini, pemanfaatan Deep Learning diharapkan dapat menjadi salah satu bentuk dukungan teknologi terhadap identifikasi dan pemilahan sampah sebagai bagian dari upaya mendukung **SDG 12: Konsumsi dan Produksi yang Bertanggung Jawab**.
+- Kaggle, [RealWaste Dataset](https://www.kaggle.com/datasets/joebeachcapital/realwaste).
 
----
+- IEEE DataPort, [RealWaste (dataset resmi, lisensi CC BY-NC-SA 4.0)](https://ieee-dataport.org/documents/realwaste).
 
-## 📚 Referensi
+- United Nations, [SDG 12: Responsible Consumption and Production](https://sdgs.un.org/goals/goal12).
 
-1. Single, S., Iranmanesh, S., & Raad, R. (2023). RealWaste: A novel real-life data set for landfill waste classification using deep learning. *Information, 14*(12), 633. https://doi.org/10.3390/info14120633
+- Single, S., Iranmanesh, S., & Raad, R. (2023). RealWaste: A novel real-life data set for landfill waste classification using deep learning (sumber dataset). *Information*, 14(12), 633. [https://doi.org/10.3390/info14120633](https://doi.org/10.3390/info14120633)
 
-2. Kaggle. (n.d.). *RealWaste Dataset*. https://www.kaggle.com/datasets/joebeachcapital/realwaste
+- Wandi, F. A., Kesuma, M. A., Nugraha, C. A., Cahyani, O. I., Umar, I., Septiarini, A., Widians, J. A., & Irsyad, A. (2026). Komparasi ResNet50, MobileNetV2 dan Custom CNN dalam klasifikasi sampah organik dan anorganik. *JATI (Jurnal Mahasiswa Teknik Informatika)*, 10(4), 6475–6481. [https://ejournal.itn.ac.id/jati/article/download/18566/9866/](https://ejournal.itn.ac.id/jati/article/download/18566/9866/)
 
-3. United Nations. (n.d.). *Goal 12: Ensure sustainable consumption and production patterns*. https://sdgs.un.org/goals/goal12
+- Bahagia, G. A., & Akbar, M. (2024). Klasifikasi sampah organik dan anorganik menggunakan metode Convolutional Neural Network (CNN). *JATI (Jurnal Mahasiswa Teknik Informatika)*, 8(5), 10349–10355. [https://ejournal.itn.ac.id/jati/article/download/11038/6267/](https://ejournal.itn.ac.id/jati/article/download/11038/6267/)
 
-4. TensorFlow. (n.d.). *TensorFlow Documentation*. https://www.tensorflow.org/
+- Husnawati, H., Malyan, A. B. J., Putra, R. R., & Agustri, S. (2024). Smart trash box technology of computer vision to support Ecogreen campus. In N. L. Husni et al. (Eds.), *Proceedings of the 7th FIRST 2023 International Conference on Global Innovations (FIRST-ESCSI 2023)* (Advances in Engineering Research, Vol. 232, pp. 220–229). Atlantis Press. [https://doi.org/10.2991/978-94-6463-386-3_25](https://doi.org/10.2991/978-94-6463-386-3_25)
+
+- Budi, B. S., & Fatma, Y. (2026). Metode systematic literature review arsitektur Convolutional Neural Network untuk klasifikasi sampah berbasis citra. *Jurnal Teknik Informatika dan Teknologi Informasi*, 6(2), 297–319. [https://doi.org/10.55606/jutiti.v6i2.7329](https://doi.org/10.55606/jutiti.v6i2.7329)
+
+- Shorten, C., & Khoshgoftaar, T. M. (2019). A survey on image data augmentation for deep learning. *Journal of Big Data*, 6, 60. [https://doi.org/10.1186/s40537-019-0197-0](https://doi.org/10.1186/s40537-019-0197-0)
+
+- Ioffe, S., & Szegedy, C. (2015). Batch normalization: Accelerating deep network training by reducing internal covariate shift. *Proceedings of the 32nd International Conference on Machine Learning (ICML)*. [https://arxiv.org/abs/1502.03167](https://arxiv.org/abs/1502.03167)
+
+- Srivastava, N., Hinton, G., Krizhevsky, A., Sutskever, I., & Salakhutdinov, R. (2014). Dropout: A simple way to prevent neural networks from overfitting. *Journal of Machine Learning Research*, 15(56), 1929–1958. [https://jmlr.org/papers/v15/srivastava14a.html](https://jmlr.org/papers/v15/srivastava14a.html)
+
+- Kingma, D. P., & Ba, J. (2015). Adam: A method for stochastic optimization. *3rd International Conference on Learning Representations (ICLR)*. [https://arxiv.org/abs/1412.6980](https://arxiv.org/abs/1412.6980)
