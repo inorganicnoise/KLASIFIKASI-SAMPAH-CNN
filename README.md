@@ -7,7 +7,7 @@
 ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-CNN-blue?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 
-Proyek ini berkaitan dengan **SDG 12: Responsible Consumption and Production (Konsumsi dan Produksi yang Bertanggung Jawab)**.
+Proyek ini merupakan implementasi **Deep Learning untuk klasifikasi jenis sampah** sebagai bentuk dukungan terhadap **SDG 12: Responsible Consumption and Production (Konsumsi dan Produksi yang Bertanggung Jawab)**.
 
 SDG 12 menekankan pentingnya pola konsumsi dan produksi yang bertanggung jawab, termasuk pengurangan limbah serta peningkatan pengelolaan sampah.
 
@@ -33,7 +33,7 @@ Melalui penerapan teknologi Deep Learning, proyek ini mendukung proses identifik
 
 Proyek ini merupakan implementasi Deep Learning untuk mengembangkan sistem klasifikasi otomatis jenis sampah berdasarkan citra gambar (*image classification*) ke dalam empat kategori: Food Organics, Metal, Paper, dan Plastic.
 
-Sistem dirancang untuk mengenali dan mengelompokkan berbagai jenis sampah berdasarkan karakteristik visualnya, seperti bentuk, warna, tekstur, dan pola.
+Model CNN dibangun dan dilatih dari awal (*from scratch*) menggunakan TensorFlow/Keras, tanpa menggunakan Transfer Learning maupun model pre-trained. Dengan pendekatan ini, model mempelajari fitur gambar secara langsung dari dataset yang digunakan.
 
 Model yang digunakan adalah Convolutional Neural Network (CNN) murni, yaitu arsitektur CNN yang dirancang dan dilatih dari awal (from scratch) menggunakan TensorFlow/Keras, tanpa transfer learning dan tanpa model pre-trained. Seluruh bobot model dilatih hanya dari dataset RealWaste.
 
@@ -65,7 +65,7 @@ Proyek ini menerapkan CNN yang dibangun dari awal untuk mengklasifikasikan empat
 
 ## 🗑️ Dataset
 
-Dataset yang digunakan dalam proyek ini adalah **RealWaste Dataset** yang diperoleh melalui platform Kaggle.
+Dataset yang digunakan adalah **RealWaste Dataset** yang diperoleh melalui Kaggle.
 
 🔗 **Sumber Dataset:** [RealWaste - Kaggle](https://www.kaggle.com/datasets/joebeachcapital/realwaste)
 
@@ -77,11 +77,11 @@ RealWaste merupakan dataset citra sampah yang berisi gambar berbagai jenis mater
 |---|---|
 | Nama Dataset | RealWaste |
 | Sumber | Kaggle |
-| Total Gambar | 4.752 gambar |
-| Jumlah Kategori | 9 kelas |
-| Format Gambar | RGB |
-| Resolusi | 524 × 524 piksel |
-| Jenis Tugas | Image Classification |
+| Total gambar yang digunakan | 2.622 gambar |
+| Jumlah kategori | 4 kelas |
+| Ukuran gambar input | 224 × 224 piksel |
+| Format gambar | RGB |
+| Jenis tugas | Image Classification |
 
 ### 🏷️ Kategori Klasifikasi
 
